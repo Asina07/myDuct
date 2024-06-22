@@ -33,7 +33,7 @@ const MyDuct = () => {
 
   const fetchDuctData = () => {
     fetch(
-      `http://localhost:3000/api/duct/getall?page=${page}&pageSize=${pageSize}&status=${status}&job_number=${jobNumber}&project=${project}&item=${item}`
+      `my-duct-7wkq.vercel.app/api/duct/getall?page=${page}&pageSize=${pageSize}&status=${status}&job_number=${jobNumber}&project=${project}&item=${item}`
     )
       .then((res) => res.json())
       .then((data) => {
