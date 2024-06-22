@@ -32,8 +32,9 @@ const MyDuct = () => {
   }, [page, pageSize, status, jobNumber, project, item]);
 
   const fetchDuctData = () => {
+    const apiUrl = 'https://my-duct-7wkq.vercel.app';
     fetch(
-      `my-duct-7wkq.vercel.app/api/duct/getall?page=${page}&pageSize=${pageSize}&status=${status}&job_number=${jobNumber}&project=${project}&item=${item}`
+      `https://my-duct-7wkq.vercel.app/api/duct/getall?page=${page}&pageSize=${pageSize}&status=${status}&job_number=${jobNumber}&project=${project}&item=${item}`
     )
       .then((res) => res.json())
       .then((data) => {
