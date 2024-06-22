@@ -21,7 +21,7 @@ app.use(
   })
 ); // Use the cors middleware
 //  route
-app.get("/test", (req, res) => {
+app.get("/", (req, res) => {
   res.status(200).send("<h1>Hello world</h1>");
 });
 
