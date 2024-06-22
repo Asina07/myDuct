@@ -24,7 +24,7 @@ const UpdateDuctPage = ({ query }) => {
   }, [query]);
 
   const fetchDuctData = () => {
-    fetch(`http://localhost:3000/api/duct/get/${query}`)
+    fetch(`my-duct-7wkq.vercel.app/api/duct/get/${query}`)
       .then((res) => res.json())
       .then((data) => {
         if (data.success) {
