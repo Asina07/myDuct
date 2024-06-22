@@ -16,7 +16,6 @@ app.use(express.json()); // allow json data in the req body
 app.use(
   cors({
     origin: ["https://my-duct-frontend.vercel.app"],
-    method: ["POST", "GET", "PUT", "DELETE"],
     credentials: true,
   })
 ); // Use the cors middleware
