@@ -47,7 +47,7 @@ const CreateDuct = () => {
         return; // Stop further execution
       }
 
-      const response = await fetch("my-duct-7wkq.vercel.app/api/duct/create", {
+      const response = await fetch("http://localhost:3000/api/duct/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
