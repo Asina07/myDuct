@@ -56,7 +56,7 @@ const UpdateDuct = ({ data }) => {
   };
 
   const updateDuctData = () => {
-    fetch(`my-duct-7wkq.vercel.app/api/duct/update/${data.id}`, {
+    fetch(`http://localhost:3000/api/duct/update/${data.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
