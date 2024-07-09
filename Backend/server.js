@@ -15,7 +15,7 @@ app.use(morgan("dev"));
 app.use(express.json()); // allow json data in the req body
 app.use(
   cors({
-    origin: ["https://my-duct-frontend.vercel.app"],
+    origin: ["http://localhost:3001"],
      methods: ["POST", "GET", "PUT", "DELETE"],
     credentials: true,
   })
